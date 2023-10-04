@@ -1,0 +1,5 @@
+FROM  docker.io/htppd
+
+RUN  echo "hello from unnati" >  /usr/local/apache2/htdocs/index.html
+
+CMD ["httpd","-D","FOREGROUND"]
