@@ -6,4 +6,4 @@ RUN apt install  apache2 -y
 
 RUN  echo "hello from unnati" >  /usr/local/apache2/htdocs/index.html
 
-CMD ["apache2ctl","-D","FOREGROUND"]
+CMD ["apache2ctl"]
