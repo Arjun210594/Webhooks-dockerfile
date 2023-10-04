@@ -1,9 +1,7 @@
-FROM  docker.io/ubuntu:latest
+FROM  docker.io/centos:7
 
-RUN apt update -y 
+RUN  yum update -y
 
-RUN apt install  apache2 -y 
+RUN yum install httpd -y
 
-RUN  echo "hello from unnati" >  /usr/local/apache2/htdocs/index.html
-
-CMD ["apache2ctl"]
+RUN  echo "hello from unnati" >  /var/www/html/index.html
