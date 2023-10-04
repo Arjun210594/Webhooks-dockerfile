@@ -1,4 +1,4 @@
-FROM  docker.io/ubuntu 
+FROM  docker.io/ubuntu:latest
 
 RUN apt update -y 
 
